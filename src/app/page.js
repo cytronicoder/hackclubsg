@@ -1,7 +1,52 @@
+"use client"
+
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 
 export default function Home() {
+  const [showFunFaq, setShowFunFaq] = useState(false)
+
+  const faqStandard = [
+    {
+      q: "Do I need prior coding experience?",
+      a: "Not at all. Our events and clubs are designed to welcome complete beginners as well as experienced coders.",
+    },
+    {
+      q: "What kinds of activities do you organize?",
+      a: "We host hackathons, workshops, project showcases, and social meetups—all aimed at helping you learn, build, and connect.",
+    },
+    {
+      q: "How can I join Hack Club Singapore?",
+      a: "Simply fill out our sign-up form via the “Join us today!” button above or email us at singapore@hackclub.com.",
+    },
+    {
+      q: "Is there any cost to participate?",
+      a: "No—our events and resources are free, thanks to support from The Hack Foundation and community donations.",
+    },
+  ]
+
+  const faqFun = [
+    {
+      q: "Is this school-related?",
+      a: "Not really. But your teacher will be proud.",
+    },
+    {
+      q: "Do I need to know how to code?",
+      a: "No lah. Can even come if you only know Ctrl+C, Ctrl+V.",
+    },
+    {
+      q: "Got free food?",
+      a: "If got budget, got makan. Otherwise, donate lah got PayNow?",
+    },
+    {
+      q: "What do you guys do?",
+      a: "Build stuff, laugh at bugs, talk nonsense, make friends.",
+    },
+  ]
+
+  const faqs = showFunFaq ? faqFun : faqStandard
+
   return (
     <main className="bg-yellow-50 min-h-screen font-sans relative">
       <Link href="https://hackclub.com/" className="fixed left-0 top-5 z-10">
@@ -37,7 +82,7 @@ export default function Home() {
       <section className="px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-12 text-center text-gray-800 font-bold text-3xl md:text-4xl">
-            What we&apos;ve been up to...
+            What we&apos;ve been up to…
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Lion City Hacks */}
@@ -47,7 +92,7 @@ export default function Home() {
                 <h3 className="text-gray-800 font-bold text-2xl">Lion City Hacks</h3>
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Wah, 150 teen frens chionged for 12 hours at Red Hat SG! Workshops, hacking, and slow-brewed friendships.
+                150 students collaborated for 12 hours at Red Hat Singapore, participating in workshops and building friendships.
               </p>
               <span className="inline-block bg-yellow-200 text-gray-800 text-sm rounded-full px-3 py-1 mb-4 mr-2">
                 Dec 2022
@@ -69,7 +114,7 @@ export default function Home() {
                 <h3 className="text-gray-800 font-bold text-2xl">Hackathon X</h3>
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                At GIIS, grades 6–12: first time coding? No paiseh — beginner-friendly vibes & steady support.
+                Hosted at GIIS for grades 6–12: a beginner-friendly hackathon open to all experience levels.
               </p>
               <span className="inline-block bg-yellow-200 text-gray-800 text-sm rounded-full px-3 py-1 mb-4 mr-2">
                 Jul 2024
@@ -84,14 +129,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Counterspell */}
+            {/* Counterspell SG */}
             <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-0.5 border border-yellow-200">
               <div className="flex items-center mb-3">
                 <span className="text-3xl mr-2">🎮</span>
                 <h3 className="text-gray-800 font-bold text-2xl">Counterspell SG</h3>
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Hack Club&apos;s global game jam: artists, musicians & coders team up for fun—Singapore edition!
+                Hack Club’s global game jam: artists, musicians, and coders team up for a Singapore edition of collaborative game development.
               </p>
               <span className="inline-block bg-yellow-200 text-gray-800 text-sm rounded-full px-3 py-1 mb-4">
                 Nov 23, 2024
@@ -119,7 +164,7 @@ export default function Home() {
                 <h3 className="text-gray-800 font-bold text-2xl">Keepsake</h3>
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                A social site-making event for Secondary/JC/Poly students. Shiok snacks & custom merch included!
+                A social site-building event for Secondary, Junior College, and Polytechnic students. Snacks and custom merchandise included!
               </p>
               <span className="inline-block bg-yellow-200 text-gray-800 text-sm rounded-full px-3 py-1 mb-4 mr-2">
                 Jun 10, 2025
@@ -140,13 +185,13 @@ export default function Home() {
       <section className="bg-yellow-50 px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-12 text-center text-gray-800 font-bold text-3xl md:text-4xl">
-            ...and what we support!
+            …and what we support!
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: "🏫", title: "Hack Clubs", desc: "Connect with other local chapters! Get money to build an awesome community intra and inter clubs :)" },
-              { icon: "🏆", title: "Hackathons", desc: "Venues, snacks & prizes—so you can focus on fun." },
-              { icon: "🚀", title: "[insert your project here]", desc: "Boosting maker culture & leadership in teens." }
+              { icon: "🏫", title: "Hack Clubs", desc: "Connect with local school chapters across Singapore. Get money to build an awesome community intra and inter clubs :)" },
+              { icon: "🏆", title: "Hackathons", desc: "Venues, refreshments, and prizes—so you can focus on creating." },
+              { icon: "🚀", title: "Special Projects", desc: "Supporting innovative teen-led initiatives island-wide." }
             ].map((item) => (
               <div
                 key={item.title}
@@ -161,16 +206,50 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="faq" className="px-6 py-16 bg-yellow-50">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="mb-4 text-gray-800 font-bold text-3xl md:text-4xl">
+            Frequently Asked Questions
+          </h2>
+          <label className="inline-flex items-center mb-8 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={showFunFaq}
+              onChange={() => setShowFunFaq(!showFunFaq)}
+              className="h-5 w-5 text-yellow-600 border-gray-300 rounded focus:ring-yellow-500"
+            />
+            <span className="ml-2 text-gray-800">
+              For the students
+            </span>
+          </label>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+            {faqs.map(({ q, a }) => (
+              <details
+                key={q}
+                className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200"
+              >
+                <summary className="cursor-pointer px-4 py-3 font-semibold text-gray-800 list-none">
+                  {q}
+                </summary>
+                <div className="px-4 pb-4 text-gray-700 leading-relaxed">
+                  {a}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="join" className="px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-6 text-gray-800 font-bold text-3xl md:text-4xl">
             About us
           </h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
-            <b>Hack Club Singapore</b> is run by a team of passionate teens who want to make tech accessible and fun for everyone. We believe in the power of community, creativity, and collaboration.
+            <b>Hack Club Singapore</b> is run by a team of passionate teens who make tech accessible and fun for everyone. We believe in community, creativity, and collaboration.
           </p>
           <p className="mb-4 text-gray-700 leading-relaxed">
-            We&apos;re fiscally sponsored by The Hack Foundation, a non-profit that supports teen hackers globally. Our funding is 100% transparent and community-driven.
+            We’re fiscally sponsored by The Hack Foundation, a non-profit supporting teen hackers globally. Our funding is 100% transparent and community-driven.
           </p>
           <Link
             href="mailto:singapore@hackclub.com"
