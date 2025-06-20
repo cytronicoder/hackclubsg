@@ -52,12 +52,14 @@ export default function Home() {
               <span className="inline-block bg-yellow-200 text-gray-800 text-sm rounded-full px-3 py-1 mb-4 mr-2">
                 Dec 2022
               </span>
-              <Link
-                href="https://hcb.hackclub.com/lion-city-hacks"
-                className="text-yellow-600 font-medium hover:underline"
-              >
-                See finances →
-              </Link>
+              <div className="flex space-x-4">
+                <Link
+                  href="https://hcb.hackclub.com/lion-city-hacks"
+                  className="text-yellow-600 font-medium hover:underline"
+                >
+                  See finances →
+                </Link>
+              </div>
             </div>
 
             {/* Hackathon X */}
@@ -72,12 +74,14 @@ export default function Home() {
               <span className="inline-block bg-yellow-200 text-gray-800 text-sm rounded-full px-3 py-1 mb-4 mr-2">
                 Jul 2024
               </span>
-              <Link
-                href="https://hackathonx.net/"
-                className="text-yellow-600 font-medium hover:underline"
-              >
-                Find out more →
-              </Link>
+              <div className="flex space-x-4">
+                <Link
+                  href="https://hackathonx.net/"
+                  className="text-yellow-600 font-medium hover:underline"
+                >
+                  Find out more →
+                </Link>
+              </div>
             </div>
 
             {/* Counterspell */}
@@ -120,12 +124,14 @@ export default function Home() {
               <span className="inline-block bg-yellow-200 text-gray-800 text-sm rounded-full px-3 py-1 mb-4 mr-2">
                 Jun 10, 2025
               </span>
-              <Link
-                href="https://keepsake.hackclub.com/"
-                className="text-yellow-600 font-medium hover:underline"
-              >
-                Join us →
-              </Link>
+              <div className="flex space-x-4">
+                <Link
+                  href="https://keepsake.hackclub.com/"
+                  className="text-yellow-600 font-medium hover:underline"
+                >
+                  Join us →
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -138,7 +144,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: "🏫", title: "Hack Clubs", desc: "Connect with other local chapters!" },
+              { icon: "🏫", title: "Hack Clubs", desc: "Connect with other local chapters! Get money to build an awesome community intra and inter clubs :)" },
               { icon: "🏆", title: "Hackathons", desc: "Venues, snacks & prizes—so you can focus on fun." },
               { icon: "🚀", title: "[insert your project here]", desc: "Boosting maker culture & leadership in teens." }
             ].map((item) => (
