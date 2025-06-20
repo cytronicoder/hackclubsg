@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -37,7 +37,7 @@ export default function Home() {
       <section className="px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-12 text-center text-gray-800 font-bold text-3xl md:text-4xl">
-            What we've been up to...
+            What we&apos;ve been up to...
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Lion City Hacks */}
@@ -87,7 +87,7 @@ export default function Home() {
                 <h3 className="text-gray-800 font-bold text-2xl">Counterspell SG</h3>
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Hack Club’s global game jam: artists, musicians & coders team up for fun—Singapore edition!
+                Hack Club&apos;s global game jam: artists, musicians & coders team up for fun—Singapore edition!
               </p>
               <span className="inline-block bg-yellow-200 text-gray-800 text-sm rounded-full px-3 py-1 mb-4">
                 Nov 23, 2024
@@ -138,9 +138,9 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: '🏫', title: 'Hack Clubs', desc: 'Connect with other local chapters!' },
-              { icon: '🏆', title: 'Hackathons', desc: 'Venues, snacks & prizes—so you can focus on fun.' },
-              { icon: '🚀', title: '[insert your project here]', desc: 'Boosting maker culture & leadership in teens.' }
+              { icon: "🏫", title: "Hack Clubs", desc: "Connect with other local chapters!" },
+              { icon: "🏆", title: "Hackathons", desc: "Venues, snacks & prizes—so you can focus on fun." },
+              { icon: "🚀", title: "[insert your project here]", desc: "Boosting maker culture & leadership in teens." }
             ].map((item) => (
               <div
                 key={item.title}
@@ -164,7 +164,7 @@ export default function Home() {
             <b>Hack Club Singapore</b> is run by a team of passionate teens who want to make tech accessible and fun for everyone. We believe in the power of community, creativity, and collaboration.
           </p>
           <p className="mb-4 text-gray-700 leading-relaxed">
-            We're fiscally sponsored by The Hack Foundation, a non-profit that supports teen hackers globally. Our funding is 100% transparent and community-driven.
+            We&apos;re fiscally sponsored by The Hack Foundation, a non-profit that supports teen hackers globally. Our funding is 100% transparent and community-driven.
           </p>
           <Link
             href="mailto:singapore@hackclub.com"
@@ -178,13 +178,13 @@ export default function Home() {
       <footer className="bg-white text-gray-600 px-6 py-12">
         <div className="mx-auto max-w-3xl text-center space-y-2">
           <p>
-            © 2025 Hack Club Singapore. Sponsored by{' '}
+            © 2025 Hack Club Singapore. Sponsored by{" "}
             <Link href="https://the.hackfoundation.org/" className="text-gray-800 hover:underline">
               The Hack Foundation
             </Link>.
           </p>
           <p>
-            Part of the global{' '}
+            Part of the global{" "}
             <Link href="https://hackclub.com/" className="text-gray-800 hover:underline">
               Hack Club
             </Link> network.
