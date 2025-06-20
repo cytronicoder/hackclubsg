@@ -43,7 +43,7 @@ export default function Home() {
                 </div>
                 <p className="mb-4 text-gray-600">
                   Wah, 150 teenagers chionged for 12 hours straight at Red Hat Singapore! Workshops, hacking, and solid friendships formed.
-                  Confirm plus chop Singapore's top teen hackathon.
+                  Confirm plus chop Singapore&apos;s top teen hackathon.
                 </p>
                 <div className="mb-4 text-sm text-muted">
                   <span className="bg-opacity-20 text-green bg-green text-white rounded-full px-3 py-1">December 2022</span>
@@ -99,8 +99,8 @@ export default function Home() {
                   <h3 className="text-red font-bold text-2xl">Counterspell Singapore</h3>
                 </div>
                 <p className="mb-4 text-gray-600">
-                  Hack Club's game jam for high schoolers - artists, musicians, and coders team up to build games together.
-                  We're part of a global 100+ city event, not bad right?
+                  Hack Club&apos;s game jam for high schoolers - artists, musicians, and coders team up to build games together.
+                  We&apos;re part of a global 100+ city event, not bad right?
                 </p>
                 <div className="mb-4 text-sm text-muted">
                   <span className="bg-opacity-20 text-orange bg-orange text-white rounded-full px-3 py-1">November 23, 2024</span>
@@ -137,7 +137,7 @@ export default function Home() {
               <div className="mb-4 text-4xl">🏆</div>
               <h3 className="mb-4 text-red font-bold text-2xl">Hackathons</h3>
               <p className="text-gray-600">
-                Funding hackathons that bring Singapore's young makers together -
+                Funding hackathons that bring Singapore&apos;s young makers together -
                 venues, makan, prizes, and everything in between. We settle everything for you.
               </p>
             </div>
@@ -160,8 +160,8 @@ export default function Home() {
           </h2>
           <div className="max-w-none prose prose-lg">
             <p className="mb-8 text-gray-700 text-xl">
-              Hack Club Singapore operates as fiscally sponsored organization under The Hack Foundation, Hack Club's 501(c)(3) entity.
-              We're funded by leftover funds from successful hackathons and community donations in Singapore - everything managed transparently through HCB, no funny business!
+              Hack Club Singapore operates as fiscally sponsored organization under The Hack Foundation, Hack Club&apos;s 501(c)(3) entity.
+              We&apos;re funded by leftover funds from successful hackathons and community donations in Singapore - everything managed transparently through HCB, no funny business!
             </p>
             <p className="mb-12 text-gray-700 text-xl">
               Our mission damn simple: remove financial barriers for young hackers, makers, and organisers across Singapore.
